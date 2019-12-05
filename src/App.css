@@ -1,0 +1,65 @@
+.App {
+  text-align: left;
+  margin: auto;
+  width: 75%;
+  font-family: arial;
+  height: 80%;
+}
+
+header {
+  margin: 0px;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.header-light {
+  background-color: #126378;
+  color: white;
+}
+
+.header-dark {
+  background-color: #004156;
+  color: white;
+}
+
+.dark {
+  background-color: #999999;
+}
+
+.light {
+  background-color: lightgrey;
+}
+
+.application {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
+
+button {
+    padding: 10px;
+    border: none;
+}
+
+button:hover {
+  padding: 10px;
+}
+
+.light-theme-button {
+  background-color: #126378;
+  color: white;
+}
+
+.dark-theme-button {
+  background-color: #004156;
+  color: white;
+}
+
+.body {
+  background-color: white;
+  color: black;
+  padding: 10px;
+}

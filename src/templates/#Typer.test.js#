@@ -1,9 +1,10 @@
 import React from 'react'
-import Typer from './Typer'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 Enzyme.configure({ adapter: new Adapter() })
 import { mount } from 'enzyme'
+
+import Typer from './Typer'
 
 describe('Typer', () => {
   it('works', () => {

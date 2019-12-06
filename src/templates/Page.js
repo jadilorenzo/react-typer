@@ -10,11 +10,12 @@ const Page = ({children, title, theme, toggleTheme}) => {
       <div className='App' style={{paddingTop: '10px'}}>
         {children}
       </div>
-      <footer onClick={toggleTheme} className={`header-${theme}`} style={{ padding: '10px', margin: 'auto', width: '75%'}}>
-        Switch theme
-      </footer>
     </div>
   )
 }
+
+// <div onClick={toggleTheme} className={`header-${theme}`} style={{padding: '10px', margin: '10px'}}>
+//   Switch theme
+// </div>
 
 export default Page

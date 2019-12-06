@@ -3,6 +3,7 @@ const {Provider, Consumer} = React.createContext()
 
 const ThemeContextProvider = (props) => {
   const initialTheme = window.localStorage.getItem('theme') !== null ? window.localStorage.getItem('theme') : 'light'
+
   const [theme, setTheme] = useState(initialTheme)
 
   const toggleTheme = () => {

@@ -63,3 +63,10 @@ button:hover {
   color: black;
   padding: 10px;
 }
+
+.keyboard {
+  color: white;
+  width: min-content;
+  padding: 10px;
+  background-color: grey;
+}

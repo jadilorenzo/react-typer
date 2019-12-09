@@ -15,7 +15,7 @@ const HomePage = () => {
         <Page theme={theme} toggleTheme={toggleTheme} title={`Typer`}>
           <div className='body'>
               Other Content
-              <Typer text={'test'} addMissed={addMissed}/>
+              <Typer text={'This is a test sentence.'} addMissed={addMissed}/>
           </div>
         </Page>
       )}

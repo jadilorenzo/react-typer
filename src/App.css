@@ -65,8 +65,18 @@ button:hover {
 }
 
 .keyboard {
-  color: white;
-  width: min-content;
-  padding: 10px;
-  background-color: grey;
+  width: 98%;
+  color: black;
+  padding: 1%;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.keyboard-input {
+  border: none;
+  border-color: none;
+  width: 100%;
+  font-size: 11.6pt;
+  color: black;
+  background-color: rgba(0, 0, 0, 0);
 }

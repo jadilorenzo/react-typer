@@ -6,8 +6,8 @@ Enzyme.configure({ adapter: new Adapter() })
 import { mount } from 'enzyme'
 
 describe('Typer', () => {
-  it('works', () => {
-    const wrap = mount(<Typer text={'test'}/>)
-    expect(wrap.text()).toContain('test')
-  })
+    it('works', () => {
+        const wrap = mount(<Typer text={'test'}/>)
+        expect(wrap.text()).toContain('test')
+    })
 })

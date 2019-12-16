@@ -3,36 +3,31 @@ import '../App.css';
 import {Redirect} from 'react-router-dom'
 import localForage from "localforage";
 localForage.config()
+let lessons = []
 
 const HomePage = () => {
   const [redirect, setRedirect] = useState(false)
   const [text, setText] = useState('')
-  const [index, setIndex] = useState('')
-  const [lessons, setLessons] = useState([])
 
-  const handleLessonSelection = (t, i) => {
+  const handleLessonSelection = (t) => {
     setText(t)
-    setIndex(i)
     setRedirect(true)
   }
 
   React.useEffect(() => {
     localForage.getItem('lessons')
-      .then(r => {
-        setLessons(r)
-        return r
-      }).then(console.log)
+      .then(r => {lessons = r})
   }, [])
 
   if (redirect) {
-    return <Redirect to={`/type/${text}/${index}`}/>
+    return <Redirect to={`/type/${text}`}/>
   } else {
     return (
       <div className='body'>
-        {lessons.map((x, index) => <button key={index} onClick={() => handleLessonSelection(x.text, index)} disabled={x.completed} className={'level'}>{index+1}</button>)}
+        {lessons.map(x => <button onClick={() => handleLessonSelection(x.text)} className='lesson'>{x.text}</button>)}
       </div>
     );
   }
 }
 
-export default HomePage
+export default React.memo(HomePage)
